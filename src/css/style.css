@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 18px;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-container{
+  width: 70%;
+  height: 800px;
+  background-color: #7053ad42;
+  border-radius: 10px;
+  box-shadow: 8px 8px 20px 1px #00000033;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.widget-title {
+  text-align: center;
+  font-size: 25px;
+  color: #121a59;
+}
+
+.widget-button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: #1b124fc4;
+  color:#ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.widget-button:hover {
+  background-color: #1b124f96;
+  transition: background-color 0.5s;
+}
+
+.chat-container {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  border: none;
+  margin-top: 30px;
+}
+
+.user-list {
+  align-items: center;
+  background-color: #f5f5e2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color:#121a59;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  list-style: none;
+}
+
+.user-name{
+  align-self: flex-start;
+  padding: 5px 0px 5px 35px;
+  background-image: url(/src/img/user-solid.svg);
+  background-size: 20px;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+
+.chat-area {
+  display: grid;
+  grid-template-rows: 3fr;
+  height: 625px;
+}
+
+
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: #ffffff;
+  overflow-y: scroll;
+}
+
+.message {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #7053ad42;
+  word-wrap: break-word;
+
+}
+
+.message-right {
+  align-self: flex-end;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.message-left {
+  align-self: flex-start;
+  border-radius: 10px 10px 10px 0px;
+  background-color: #f5f5e2;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.name-you {
+  color: #ff8b8b;
+}
+
+.date-right, .name-right {
+  align-self: flex-end;
+}
+
+.input-message {
+  outline: none;
+  height: 49px;
+  padding: 10px 10px 10px 35px;
+  resize: vertical;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-image: url(/src/img/paper-plane-solid.svg);
+  background-size: 20px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #f5f5e2;
+  width: 100%;
+}
+
+.popup-container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #151414d9;
+}
+
+.popup {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.popup-title-welcome {
+  font-size: 24px;
+  align-self: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.popup-title {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.input-name {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  margin: 15px 0 25px 0;
+}
+
+.popup-footer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  visibility: hidden;
+  font-size: 14px;
+  color: #ff8b8b;
+}
+
+.popup-button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #1b124fc4;
+  color:#ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #1b124f96;
+  transition: background-color 0.5s;
+}
