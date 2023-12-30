@@ -1,5 +1,5 @@
-#  Домашнее задание к занятию "10. Geolocation, Notification, Media"
+#  Домашнее задание к занятию "8. EventSource, Websockets"
 
-[![Build status](https://ci.appveyor.com/api/projects/status/iccesqyy79ltto1g?svg=true)](https://ci.appveyor.com/project/aleksandr2639/homework-geolocation)
+[![Build status](https://ci.appveyor.com/api/projects/status/06yp21ucrhg3sl2k?svg=true)](https://ci.appveyor.com/project/aleksandr2639/homework-chatfrontend)
 
-https://aleksandr2639.github.io/homework-geolocation/
+https://aleksandr2639.github.io/homework_chatFrontend/
