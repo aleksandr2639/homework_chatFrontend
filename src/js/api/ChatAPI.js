@@ -1,6 +1,9 @@
 const HOST = 'https://aleksandr2639.onrender.com/';
 
 export default class ChatAPI {
+  constructor() {
+    this.ws = new WebSocket('wss://aleksandr2639.onrender.com/ws');
+  }
   create(userName, callback) {
     fetch(`${HOST}new-user`, {
       method: 'POST',
@@ -14,17 +17,14 @@ export default class ChatAPI {
   }
 
   start(callback) {
-    this.ws = new WebSocket('wss://aleksandr2639.onrender.com/ws');
     this.ws.addEventListener('message', (e) => {
       const data = JSON.parse(e.data);
+      console.log(data)
       callback(data);
     });
   }
 
   send(message) {
-    if (!message) {
-      return;
-    }
     this.ws.send(JSON.stringify({
       type: 'send',
       text: message.text,

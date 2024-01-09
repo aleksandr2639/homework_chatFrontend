@@ -80,6 +80,9 @@ export default class Controller {
 
   sendMessage() {
     const message = this.widget.input.value;
+    if (!message) {
+      return;
+    }
     this.api.send({
       text: message,
       name: this.userName,

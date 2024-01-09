@@ -25,7 +25,7 @@ export default class Widget {
         <div class="messages">
         </div>
         <form class="form-message">
-          <input type="text" class="input-message">
+          <input type="text" class="input-message" required>
         </form>
       </div>
     </div>
